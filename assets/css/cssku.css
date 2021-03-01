@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Roboto:wght@300&display=swap');
+
+a {
+    color: #000!important;
+} 
+
+h1 {
+    font-size: 45pt;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 20pt;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-background {
+    position: relative;
+    background-image: url("/assets/images/bg-hero.png");
+    height: 641px;
+}
+
+.hero-background img {
+    position: absolute;
+    left: -100px;
+    bottom: 0;
+}
+
+#title-hero {
+    color: #0F7AF9;
+    font-family: 'Playfair Display', serif;
+}
+
