@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  color: #414141;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+p {
+  font-size: 20px;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/hero.png) no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+header .navbar {
+  background-color: transparent !important;
+}
+header .navbar-light .navbar-toggler {
+  border-color: transparent!important;
+  margin-left: -10px;
+}
+header .container .row .col-md-6 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+header .container .name-title {
+  color: #0F7AF9;
+}
+
+
+@media only screen and (max-width: 768px) {
+  header {
+    background-position: top;
+    height: 100vh;
+  }
+
+  header .header-description {
+    padding: 1rem;
+  }
+
+  header .container .row .col-md-6 {
+    margin-top: 130px;
+    align-items: center;
+  }
+
+  header .header-description .button-group button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+section {
+  min-height: 80vh;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.about, .photoworks {
+  background-color: #fbfbfb;
+}
+.about h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+}
+.about .row .left-side {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+}
+.about .row .right-side {
+  padding: 3rem;
+  position: relative;
+}
+
+.about .row .right-side img {
+  width: 260px;
+}
+.about .row .right-side .decor-wave{
+  width: 76px;
+  height: 20px;
+  position: absolute;
+}
+
+.about .row .right-side .decor-wave:first-child{
+  bottom: 80px;
+  left: 20px;
+}
+
+.about .row .right-side .decor-wave:last-child{
+  right: 20px;
+  top: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about .row .left-side {
+    text-align: justify;
+    padding: 2rem;
+  }
+  
+  .about .row .right-side img {
+    width: 100%;
+  }
+}
+
+.skills {
+  background-color: #FFFFFF;
+}
+.skills h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+}
+
+.skills .container blockquote > p, .photoworks .container blockquote > p, .contact .container blockquote > p {
+  max-width: 520px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.skills .list-skills {
+  display: flex;
+  justify-content: center;
+}
+.skills .list-skills .item-skills img {
+  height: 72px;
+  padding: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .skills .list-skills {
+    flex-wrap: wrap;
+  }
+
+  .skills .list-skills .item-skills img {
+    height: 72px;
+    margin-bottom: 10px;
+    padding: .5rem;
+  }
+}
+
+.photoworks h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+}
+.photoworks .row img {
+  width: 100%;
+}
+
+.contact .row .col-12 img, .contact .row .col-md-6 img {
+  width: 100%;
+}
+
+.contact hr {
+  margin-left: 0;
+}
+
+.contact .row .col-12 h2, .contact .row .col-md-6 h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+}
+
+.contact .container blockquote > p {
+  text-align: left;
+  margin-left: 0;
+}
+
+.contact .row .col-12 .social-media, .contact .row .col-md-6 .social-media {
+  display: flex;
+}
+.contact .row .col-12 .social-media a, .contact .row .col-md-6 .social-media a {
+  padding: 0.5rem;
+  text-align: center;
+}
+.contact .row .col-12 .social-media a img, .contact .row .col-md-6 .social-media a img {
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .contact .row h2 {
+    margin-top: 0.5rem;
+  }
+}
+
+hr {
+  display: block;
+  border-bottom: 3px solid #0F7AF9;
+  margin-bottom: -2px;
+  max-width: 100px;
+}
+
+footer {
+  color: #000000;
+  background-color: #E5E5E5;
+  padding: 1rem;
+  text-align: center;
+}
