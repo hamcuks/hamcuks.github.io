@@ -188,10 +188,19 @@
         })
 
         $(document).scroll(() => {
-            if ($(this).scrollTop() > 150) {
-                $('.navbar').addClass('light-mode')
-            } else {
-                $('.navbar').removeClass('light-mode')
+            if (window.innerWidth > 375) {
+                if ($(this).scrollTop() > 250) {
+                    $('.navbar').addClass('light-mode')
+                } else {
+                    $('.navbar').removeClass('light-mode')
+                }
+            } else if(window.innerWidth <= 375)
+            {
+                if ($(this).scrollTop() > 10) {
+                    $('.navbar').addClass('light-mode')
+                } else {
+                    $('.navbar').removeClass('light-mode')
+                }
             }
         })
 
