@@ -184,8 +184,10 @@
         feather.replace()
 
         $('.navbar-toggler').click(() => {
-            $('.navbar').toggleClass('light-mode')
+            $('.navbar').addClass('light-mode')
         })
+
+        
 
         $(document).scroll(() => {
             if (window.innerWidth > 375) {
@@ -203,6 +205,11 @@
                 }
             }
         })
+
+        if(window.innerWidth <= 500)
+        {
+            document.querySelector('.header-description').style.marginTop = `${window.innerHeight*0.55}px`
+        }
 
     </script>
 
